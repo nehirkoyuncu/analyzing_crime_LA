@@ -23,6 +23,6 @@ Age Binning: Used pd.cut to segment Vict Age into defined ranges (0-17, 18-25, e
 💡 Key Insights
 Peak Hour: The analysis revealed that criminal activity reaches its daily high at 12:00 PM (noon).
 
-Night Safety: Central area was identified as the hotspot for nighttime incidents between 10 PM and 4 AM.
+Night Safety: 77th Street area was identified as the hotspot for nighttime incidents between 10 PM and 4 AM.
 
 Vulnerable Groups: Citizens in the 26-34 age bracket were found to be the most affected demographic in the dataset.
