@@ -26,4 +26,3 @@ Peak Hour: The analysis revealed that criminal activity reaches its daily high a
 Night Safety: Central area was identified as the hotspot for nighttime incidents between 10 PM and 4 AM.
 
 Vulnerable Groups: Citizens in the 26-34 age bracket were found to be the most affected demographic in the dataset.
-Age Binning: Used pd.cut to segment Vict Age into defined ranges: 0-17, 18-25, 26-34, 35-44, 45-54, 55-64, and 65+.
