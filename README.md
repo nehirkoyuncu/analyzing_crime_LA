@@ -1,37 +1,21 @@
-This project analyzes the crimes.csv dataset to answer three main questions:
+📂 Analyzing Crime in Los Angeles
+This project performs a comprehensive data analysis on the crimes.csv dataset to identify patterns in criminal activities across Los Angeles.
 
-Hour with the Highest Crime Frequency:
+🔍 Key Research Questions
+Peak Crime Hour: Identifying the specific hour of the day when crime frequency is at its highest (Stored in peak_crime_hour).
 
--Crimes were grouped by the hour of occurrence.
+Night Crime Hotspots: Determining which city area experiences the most criminal activity during nighttime (10:00 PM – 3:59 AM) (Stored in peak_night_crime_location).
 
--The hour with the highest number of crimes was identified and stored in an integer variable called peak_crime_hour.
+Victim Demographics: Categorizing crime data by victim age groups to understand which age brackets are most affected.
 
-Area with the Most Night Crimes:
+🛠️ Tech Stack
+Language: Python
 
--Nighttime was defined as the period between 10:00 PM and 3:59 AM.
+Libraries: Pandas, NumPy, Matplotlib, Seaborn
 
--Crimes committed during this time range were filtered and grouped by area.
+📊 Methodology
+Time Analysis: Extracted the hour from the TIME OCC column to find daily peaks.
 
--The area with the largest frequency of night crimes was identified and stored in a string variable called peak_night_crime_location.
+Geospatial Filtering: Filtered crimes occurring between 22:00 and 04:00 to isolate nighttime incidents by AREA NAME.
 
-Crimes by Victim Age Groups:
-
--Victim ages were categorized into the following groups:
-
-0–17
-
-18–25
-
-26–34
-
-35–44
-
-45–54
-
-55–64
-
-65+
-
--The number of crimes in each age group was calculated.
-
--Results were stored as a pandas Series named victim_ages, with age group labels as the index and crime counts as the values.
+Age Binning: Used pd.cut to segment Vict Age into defined ranges: 0-17, 18-25, 26-34, 35-44, 45-54, 55-64, and 65+.
